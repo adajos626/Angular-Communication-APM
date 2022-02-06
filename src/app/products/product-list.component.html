@@ -1,9 +1,9 @@
-﻿<div class='panel panel-primary'>
-    <div class='panel-heading'>
+<div class='card'>
+    <div class='card-header'>
         {{pageTitle}}
     </div>
 
-    <div class='panel-body'>
+    <div class='card-body'>
         <!-- Filter by the Title   -->
         <div class='row'>
             <div class='col-md-2'>Filter by:</div>
@@ -19,12 +19,12 @@
         </div>
 
         <div class='table-responsive'>
-            <table class='table'
+            <table class='table mb-0'
                     *ngIf='products && products.length'>
                 <thead>
                     <tr>
                         <th>
-                            <button class='btn btn-primary'
+                            <button class='btn btn-primary btn-sm'
                                 (click)='toggleImage()'>
                                 {{showImage ? 'Hide' : 'Show'}} Image
                             </button>
