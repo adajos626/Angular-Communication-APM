@@ -49,13 +49,13 @@
                         <td><a [routerLink]="['/products', product.id]">
                                 {{ product.productName }}
                             </a>
-						</td>
+                        </td>
                         <td>{{ product.productCode }}</td>
                         <td>{{ product.releaseDate }}</td>
                         <td>{{ product.price | currency:'USD':'symbol':'1.2-2'}}</td>
                         <td>
                             <pm-star [rating]='product.starRating'>
-							</pm-star>
+                            </pm-star>
                         </td>
                         <td>
                             <a class="btn btn-primary" 
